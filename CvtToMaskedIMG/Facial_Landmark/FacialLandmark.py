@@ -30,7 +30,7 @@ def visualize_facial_landmarks(img, shape, colors=None, alpha=0.7):
         j, k = FACIAL_LANDMARKS_PNTS[name] # pointnum의 min, max를 각각 j, k에 저장
         points = shape[j:k]
         
-        if name == "jaw":
+        if name == "borderOfMask":
             for l in range(1, len(points)):
                 ptX, ptY = tuple(points[l-1]), tuple(points[l])
                 cv2.line(overlay, ptX, ptY, colors[i], 3)
