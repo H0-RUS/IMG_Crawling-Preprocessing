@@ -3,7 +3,7 @@ from imutils import face_utils
 import dlib
 import argparse
 import imutils
-import numpy as np
+import cv2
 
 ap = argparse.ArgumentParser()
 ap.add_argument("-p", "--shape-predictor", required=True, help="path to facial landmark predictor")
